@@ -6,48 +6,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="828de9a3-cae6-4821-b36f-357f4f2c333e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApplicationGuide/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApplicationGuide/.idea/dataSources/a4e45063-21f6-42e8-8b0a-0b34327d66f4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.WebApplicationGuide/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityMeterController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityValueController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationGuide/Controllers/TodoItemsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationGuide/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationGuide/Migrations/20220402121722_InitialCreate.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationGuide/Migrations/20220402121722_InitialCreate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationGuide/Migrations/ElectricityСountContextModelSnapshot.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationGuide/Models/ElectricityСountContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationGuide/Models/ElectricityСountModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationGuide/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationGuide/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationGuide/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationGuide/WeatherForecast.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationGuide/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApplicationGuide/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplicationDemoTask/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplicationDemoTask/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplicationDemoTask/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/Startup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/WebApplicationDemoTask.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/obj/Debug/netcoreapp3.0/WebApplicationDemoTask.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/obj/Debug/netcoreapp3.0/WebApplicationDemoTask.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/obj/Debug/netcoreapp3.0/WebApplicationDemoTask.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/obj/Debug/netcoreapp3.0/WebApplicationDemoTask.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/obj/WebApplicationDemoTask.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/obj/WebApplicationDemoTask.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/obj/WebApplicationDemoTask.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationDemoTask/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplicationGuide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplicationGuide/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityMeterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityMeterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityValueController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityValueController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.RazorTargetAssemblyInfo.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.RazorTargetAssemblyInfo.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +30,14 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/162edbb1f38f4276805372b28490598c1ae600/0/ApiControllerAttribute.cs" root0="SKIP_HIGHLIGHTING" />
@@ -86,7 +64,7 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="discord-application" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebApplicationGuide">
@@ -135,7 +113,8 @@
       <workItem from="1648796226367" duration="18239000" />
       <workItem from="1648884182770" duration="9581000" />
       <workItem from="1648908890018" duration="5158000" />
-      <workItem from="1648972616301" duration="9061000" />
+      <workItem from="1648972616301" duration="12730000" />
+      <workItem from="1649001088483" duration="4376000" />
     </task>
     <task id="LOCAL-00001" summary="inuit">
       <created>1648976372417</created>
@@ -144,7 +123,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648976372417</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add all">
+      <created>1648990800457</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648990800457</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add">
+      <created>1648990909703</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648990909703</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +157,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="inuit" />
-    <option name="LAST_COMMIT_MESSAGE" value="inuit" />
+    <MESSAGE value="add all" />
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
 </project>

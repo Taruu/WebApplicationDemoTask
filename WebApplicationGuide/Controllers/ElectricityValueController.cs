@@ -24,11 +24,6 @@ namespace WebApplicationGuide.Controllers
             _logger = logger;
         }
 
-        // GET
-        public IActionResult Index()
-        {
-            return Content("test");
-        }
 
         [HttpPost()]
         public async Task<ActionResult<ElectricityValue>> PostElectricityMeter(ElectricityValue newElectricityValue)
@@ -38,11 +33,14 @@ namespace WebApplicationGuide.Controllers
                 await _context.ElectricityCount.FindAsync(newElectricityValue.ElectricityCountForeignKey);
             _logger.LogInformation($" el -{newElectricityValue.CreateAt}");
             if (!ModelState.IsValid || (electricityCount == null)) return BadRequest(ModelState);
-            if (newElectricityValue.CreateAt.ToString() == "01.01.0001 00:00:00")
-
-                _context.ElectricityValues.Add(newElectricityValue);
+            if (newElectricityValue.CreateAt == DateTime.MinValue)
+            {
+                newElectricityValue.CreateAt = DateTime.Now;
+            }
+            _context.ElectricityValues.Add(newElectricityValue);
             await _context.SaveChangesAsync();
             return newElectricityValue;
         }
+        
     }
 }
