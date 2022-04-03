@@ -51,7 +51,7 @@ namespace WebApplicationGuide.Controllers
                  var valuesCounter =
                      _context.ElectricityValues.Where(v => v.CreateAt >= startTime && v.CreateAt < endTime);
 
-                TimeSpan interval = new TimeSpan(0, 30, 0); // 1 minutes.
+                TimeSpan interval = new TimeSpan(0, 30, 0); // 30 minutes.
                 var groupedTimes = from elVal in valuesCounter.AsEnumerable()
                     group elVal by elVal.CreateAt.Ticks / interval.Ticks
                     into g
