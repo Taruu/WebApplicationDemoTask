@@ -7,12 +7,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace WebApplicationDemoTask
+namespace WebApplicationGuide
 {
     public class Program
     {
         public static void Main(string[] args)
-        {
+        {   
             CreateHostBuilder(args).Build().Run();
         }
 

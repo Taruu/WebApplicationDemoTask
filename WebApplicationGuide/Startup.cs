@@ -11,7 +11,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace WebApplicationDemoTask
+using Microsoft.EntityFrameworkCore;
+using WebApplicationGuide.Models;
+
+namespace WebApplicationGuide
 {
     public class Startup
     {
@@ -25,6 +28,13 @@ namespace WebApplicationDemoTask
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Если мы поменяли модель и хотим обновить базу
+            //dotnet ef migrations remove --context ElectricityСountContext
+            //dotnet ef migrations add InitialCreate --context ElectricityСountContext
+            //dotnet ef database update --context ElectricityСountContext
+            
+            services.AddDbContext<ElectricityСountContext>(optionsBuilder =>
+                optionsBuilder.UseSqlite("Data Source=DemoProject.db;Cache=Shared"));
             services.AddControllers();
         }
 
@@ -41,6 +51,7 @@ namespace WebApplicationDemoTask
             app.UseRouting();
 
             app.UseAuthorization();
+
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
