@@ -34,11 +34,14 @@ namespace WebApplicationGuide.Controllers
 
         // GET: api/TodoItems/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<ElectricityCount>> GetElectricityMeters(long id)
+        public async Task<ActionResult<Object>> GetElectricityMeters(long id)
         {
             DateTime setDate;
+
             _logger.LogInformation($"Id {id} - {HttpContext.Request.Query["date"].GetType()}");
+
             Boolean dateInQuery = DateTime.TryParse(HttpContext.Request.Query["date"], out setDate);
+
             _logger.LogInformation($"setDate {dateInQuery}, {setDate}, - {HttpContext.Request.Query["date"]}");
 
 
@@ -50,25 +53,38 @@ namespace WebApplicationGuide.Controllers
                 DateTime endTime = setDate.Date.AddDays(1);
 
                 var valuesCounter =
-                    _context.ElectricityValues.Where(v => (v.ElectricityCountForeignKey == electricityCount.ElectricityCountId) && (v.CreateAt >= startTime && v.CreateAt < endTime));
+                    _context.ElectricityValues.Where(v =>
+                        (v.ElectricityCountForeignKey == electricityCount.ElectricityCountId) &&
+                        (v.CreateAt >= startTime && v.CreateAt < endTime));
 
-                
+                ElectricityValue maxNewValue = _context.ElectricityValues.Where(v =>
+                        (v.ElectricityCountForeignKey == electricityCount.ElectricityCountId))
+                    .OrderByDescending(value => value.CreateAt)
+                    .FirstOrDefault();
+                ElectricityValue maxOldValue = _context.ElectricityValues.Where(v =>
+                        (v.ElectricityCountForeignKey == electricityCount.ElectricityCountId))
+                    .OrderBy(value => value.CreateAt)
+                    .FirstOrDefault();
+                var RangeDates = new
+                    {maxDate = maxNewValue.CreateAt.ToString(), minDate = maxOldValue.CreateAt.ToString()};
+
                 TimeSpan interval = new TimeSpan(0, 30, 0); // 30 minutes.
 
-                var groupedTimes = from elVal in valuesCounter.AsEnumerable()
-                    group elVal by elVal.CreateAt.Ticks / interval.Ticks
-                    into g
-                    select new {step = new DateTime(g.Key * interval.Ticks), Values = g.ToList()};
+                //Нужно потом разобрать как это работает в стиле функций
+                var electricityCountValues = (from elVal in valuesCounter.AsEnumerable()
+                        group elVal by elVal.CreateAt.Ticks / interval.Ticks
+                        into g
+                        select new {step = new DateTime(g.Key * interval.Ticks).ToString(), Values = g.ToList()})
+                    .ToDictionary(b => b.step, b => b.Values);
 
-                
 
-
-                foreach (var value in groupedTimes)
+                var result = new
                 {
-                    _logger.LogInformation($" ### {value.step} - {value.Values.Count()}");
-                }
+                    electricityCountId = electricityCount.ElectricityCountId, name = electricityCount.Name,
+                    serialNumber = electricityCount.SerialNumber, RangeDates, electricityCountValues
+                };
 
-                return electricityCount;
+                return result;
             }
             else
             {

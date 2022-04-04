@@ -5,10 +5,12 @@
     <projectFile profileName="WebApplicationGuide">WebApplicationGuide/WebApplicationGuide.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="828de9a3-cae6-4821-b36f-357f4f2c333e" name="Changes" comment="add step result">
+    <list default="true" id="828de9a3-cae6-4821-b36f-357f4f2c333e" name="Changes" comment="groupedTimes work">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplicationGuide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplicationGuide/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityMeterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityMeterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Models/ElectricityСountContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Models/ElectricityСountContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Models/ElectricityСountModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Models/ElectricityСountModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.pdb" afterDir="false" />
     </list>
@@ -59,7 +61,7 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebApplicationGuide">
@@ -110,7 +112,7 @@
       <workItem from="1648908890018" duration="5158000" />
       <workItem from="1648972616301" duration="12730000" />
       <workItem from="1649001088483" duration="4686000" />
-      <workItem from="1649061585398" duration="4197000" />
+      <workItem from="1649061585398" duration="13635000" />
     </task>
     <task id="LOCAL-00001" summary="inuit">
       <created>1648976372417</created>
@@ -147,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649006794854</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="groupedTimes work">
+      <created>1649067184467</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649067184467</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,25 +180,7 @@
     <MESSAGE value="add" />
     <MESSAGE value="add step return" />
     <MESSAGE value="add step result" />
-    <option name="LAST_COMMIT_MESSAGE" value="add step result" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityMeterController.cs</url>
-          <line>67</line>
-          <properties documentPath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityMeterController.cs" initialLine="66" containingFunctionPresentation="method 'GetElectricityMeters'">
-            <startOffsets>
-              <option value="2456" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2526" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="groupedTimes work" />
+    <option name="LAST_COMMIT_MESSAGE" value="groupedTimes work" />
   </component>
 </project>

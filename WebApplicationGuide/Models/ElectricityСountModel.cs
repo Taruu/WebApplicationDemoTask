@@ -24,7 +24,6 @@ namespace WebApplicationGuide.Models
         public float ReactiveReceive { get; set; }
         public float ReactiveOutput { get; set; }
 
-        public ElectricityCount ElectricityCount { get; set; }
 
         // public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         // {

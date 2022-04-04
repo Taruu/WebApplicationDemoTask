@@ -21,7 +21,7 @@ namespace WebApplicationGuide.Models
             modelBuilder.Entity<ElectricityCount>().HasIndex(item => item.SerialNumber).IsUnique();
 
             //Cвязи наши мысли сильный
-            modelBuilder.Entity<ElectricityValue>().HasOne(DataItem => DataItem.ElectricityCount)
+            modelBuilder.Entity<ElectricityValue>().HasOne<ElectricityCount>()
                 .WithMany().HasForeignKey(DataItem => DataItem.ElectricityCountForeignKey);
         }
     }
