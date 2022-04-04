@@ -48,19 +48,24 @@ namespace WebApplicationGuide.Controllers
             {
                 DateTime startTime = setDate.Date;
                 DateTime endTime = setDate.Date.AddDays(1);
-                 var valuesCounter =
-                     _context.ElectricityValues.Where(v => v.CreateAt >= startTime && v.CreateAt < endTime);
 
+                var valuesCounter =
+                    _context.ElectricityValues.Where(v => (v.ElectricityCountForeignKey == electricityCount.ElectricityCountId) && (v.CreateAt >= startTime && v.CreateAt < endTime));
+
+                
                 TimeSpan interval = new TimeSpan(0, 30, 0); // 30 minutes.
+
                 var groupedTimes = from elVal in valuesCounter.AsEnumerable()
                     group elVal by elVal.CreateAt.Ticks / interval.Ticks
                     into g
-                    select new {step = new DateTime(g.Key * interval.Ticks), Values = g};
+                    select new {step = new DateTime(g.Key * interval.Ticks), Values = g.ToList()};
+
+                
 
 
                 foreach (var value in groupedTimes)
                 {
-                    _logger.LogInformation($"{value.step} - {value.Values}");
+                    _logger.LogInformation($" ### {value.step} - {value.Values.Count()}");
                 }
 
                 return electricityCount;

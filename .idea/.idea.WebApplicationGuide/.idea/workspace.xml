@@ -5,19 +5,12 @@
     <projectFile profileName="WebApplicationGuide">WebApplicationGuide/WebApplicationGuide.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="828de9a3-cae6-4821-b36f-357f4f2c333e" name="Changes" comment="">
+    <list default="true" id="828de9a3-cae6-4821-b36f-357f4f2c333e" name="Changes" comment="add step result">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplicationGuide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplicationGuide/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityMeterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityMeterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityValueController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityValueController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.RazorTargetAssemblyInfo.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.RazorTargetAssemblyInfo.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +36,10 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/162edbb1f38f4276805372b28490598c1ae600/0/ApiControllerAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a45438fcae8f59d75fbab2ee566d81a07aedcc44f5bda3581080d2d261b2a5a/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a51601b6cc05f3ee8bb7854d8cf5f1637ad26533d6689ed6cee99f7b8b280/HttpPutAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9397f48ad5ea195ac4014914c3e75c9fc61aa728c7091cf2e5d2d1bd3de7954/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e899759452a9c1d74615d7513a4e1dd04cf7f3f31c44a7fe4fce170b5b3f98f/Future.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6d3563dd7afd65df45dcc464eb948a7721160bacf6079a666503a62bc6f20/ModelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1137a8ed8863d86dbb99bfc82a58d8b2a75bb1e3198d3943595eb5e864e7f78/AsyncValueTaskMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/174722726b4c5eee18a95a145c2decedf934448f218f5df313dc68ee5e31260/ActionResultOfT.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1d37075595f84289accb0929ef60d6f62ba00/0/IActionResult.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -114,7 +109,8 @@
       <workItem from="1648884182770" duration="9581000" />
       <workItem from="1648908890018" duration="5158000" />
       <workItem from="1648972616301" duration="12730000" />
-      <workItem from="1649001088483" duration="4376000" />
+      <workItem from="1649001088483" duration="4686000" />
+      <workItem from="1649061585398" duration="4197000" />
     </task>
     <task id="LOCAL-00001" summary="inuit">
       <created>1648976372417</created>
@@ -137,7 +133,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648990909703</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add step return">
+      <created>1649006780115</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649006780115</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add step result">
+      <created>1649006794854</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649006794854</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +169,27 @@
     <MESSAGE value="inuit" />
     <MESSAGE value="add all" />
     <MESSAGE value="add" />
-    <option name="LAST_COMMIT_MESSAGE" value="add" />
+    <MESSAGE value="add step return" />
+    <MESSAGE value="add step result" />
+    <option name="LAST_COMMIT_MESSAGE" value="add step result" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityMeterController.cs</url>
+          <line>67</line>
+          <properties documentPath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityMeterController.cs" initialLine="66" containingFunctionPresentation="method 'GetElectricityMeters'">
+            <startOffsets>
+              <option value="2456" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2526" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
