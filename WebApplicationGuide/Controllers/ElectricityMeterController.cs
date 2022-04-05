@@ -47,27 +47,41 @@ namespace WebApplicationGuide.Controllers
 
             var electricityCount = await _context.ElectricityCount.FindAsync(id);
 
+
+            DateTime startTime = setDate.Date;
+            DateTime endTime = setDate.Date.AddDays(1);
+
+            var valuesCounter =
+                _context.ElectricityValues.Where(v =>
+                    (v.ElectricityCountForeignKey == electricityCount.ElectricityCountId) &&
+                    (v.CreateAt >= startTime && v.CreateAt < endTime));
+
+            ElectricityValue newestValue = _context.ElectricityValues.Where(v =>
+                    (v.ElectricityCountForeignKey == electricityCount.ElectricityCountId))
+                .OrderByDescending(value => value.CreateAt)
+                .FirstOrDefault();
+
+            ElectricityValue oldestValue = _context.ElectricityValues.Where(v =>
+                    (v.ElectricityCountForeignKey == electricityCount.ElectricityCountId))
+                .OrderBy(value => value.CreateAt)
+                .FirstOrDefault();
+
+            var RangeDates = new Object();
+
+
+            if ((newestValue is ElectricityValue) && (oldestValue is ElectricityValue))
+            {
+                RangeDates = new
+                    {maxDate = newestValue.CreateAt.ToString(), minDate = oldestValue.CreateAt.ToString()};
+            }
+            else
+            {
+                RangeDates = new { };
+            }
+
+
             if (dateInQuery)
             {
-                DateTime startTime = setDate.Date;
-                DateTime endTime = setDate.Date.AddDays(1);
-
-                var valuesCounter =
-                    _context.ElectricityValues.Where(v =>
-                        (v.ElectricityCountForeignKey == electricityCount.ElectricityCountId) &&
-                        (v.CreateAt >= startTime && v.CreateAt < endTime));
-
-                ElectricityValue maxNewValue = _context.ElectricityValues.Where(v =>
-                        (v.ElectricityCountForeignKey == electricityCount.ElectricityCountId))
-                    .OrderByDescending(value => value.CreateAt)
-                    .FirstOrDefault();
-                ElectricityValue maxOldValue = _context.ElectricityValues.Where(v =>
-                        (v.ElectricityCountForeignKey == electricityCount.ElectricityCountId))
-                    .OrderBy(value => value.CreateAt)
-                    .FirstOrDefault();
-                var RangeDates = new
-                    {maxDate = maxNewValue.CreateAt.ToString(), minDate = maxOldValue.CreateAt.ToString()};
-
                 TimeSpan interval = new TimeSpan(0, 30, 0); // 30 minutes.
 
                 //Нужно потом разобрать как это работает в стиле функций
@@ -76,8 +90,6 @@ namespace WebApplicationGuide.Controllers
                         into g
                         select new {step = new DateTime(g.Key * interval.Ticks).ToString(), Values = g.ToList()})
                     .ToDictionary(b => b.step, b => b.Values);
-
-
                 var result = new
                 {
                     electricityCountId = electricityCount.ElectricityCountId, name = electricityCount.Name,
@@ -88,7 +100,12 @@ namespace WebApplicationGuide.Controllers
             }
             else
             {
-                return electricityCount;
+                var result = new
+                {
+                    electricityCountId = electricityCount.ElectricityCountId, name = electricityCount.Name,
+                    serialNumber = electricityCount.SerialNumber, RangeDates, electricityCountValues = new { }
+                };
+                return result;
             }
         }
 
