@@ -9,6 +9,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplicationGuide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplicationGuide/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityMeterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityMeterController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.pdb" afterDir="false" />
     </list>
@@ -112,6 +114,7 @@
       <workItem from="1649001088483" duration="4686000" />
       <workItem from="1649061585398" duration="14740000" />
       <workItem from="1649165694548" duration="3421000" />
+      <workItem from="1649226807269" duration="9155000" />
     </task>
     <task id="LOCAL-00001" summary="inuit">
       <created>1648976372417</created>

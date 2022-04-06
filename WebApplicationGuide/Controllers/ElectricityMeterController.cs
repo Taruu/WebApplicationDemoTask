@@ -38,13 +38,10 @@ namespace WebApplicationGuide.Controllers
         {
             DateTime setDate;
 
-            _logger.LogInformation($"Id {id} - {HttpContext.Request.Query["date"].GetType()}");
-
             Boolean dateInQuery = DateTime.TryParse(HttpContext.Request.Query["date"], out setDate);
 
-            _logger.LogInformation($"setDate {dateInQuery}, {setDate}, - {HttpContext.Request.Query["date"]}");
 
-
+            setDate = setDate.ToUniversalTime(); // Вот за что я люблю unixtime там такой шизы нет. цифирки значит цифирки
             var electricityCount = await _context.ElectricityCount.FindAsync(id);
 
 
@@ -72,14 +69,13 @@ namespace WebApplicationGuide.Controllers
             if ((newestValue is ElectricityValue) && (oldestValue is ElectricityValue))
             {
                 RangeDates = new
-                    {maxDate = newestValue.CreateAt.ToString(), minDate = oldestValue.CreateAt.ToString()};
+                    {maxDate = newestValue.CreateAt.ToString("o"), minDate = oldestValue.CreateAt.ToString("o")};
             }
             else
             {
                 RangeDates = new { };
             }
-
-
+            
             if (dateInQuery)
             {
                 TimeSpan interval = new TimeSpan(0, 30, 0); // 30 minutes.
@@ -88,8 +84,9 @@ namespace WebApplicationGuide.Controllers
                 var electricityCountValues = (from elVal in valuesCounter.AsEnumerable()
                         group elVal by elVal.CreateAt.Ticks / interval.Ticks
                         into g
-                        select new {step = new DateTime(g.Key * interval.Ticks).ToString(), Values = g.ToList()})
+                        select new {step = new DateTime(g.Key * interval.Ticks).ToString("o"), Values = g.ToList()})
                     .ToDictionary(b => b.step, b => b.Values);
+                
                 var result = new
                 {
                     electricityCountId = electricityCount.ElectricityCountId, name = electricityCount.Name,

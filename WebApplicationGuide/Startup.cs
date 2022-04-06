@@ -10,7 +10,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-
 using Microsoft.EntityFrameworkCore;
 using WebApplicationGuide.Models;
 
@@ -18,6 +17,8 @@ namespace WebApplicationGuide
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -28,11 +29,22 @@ namespace WebApplicationGuide
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(option =>
+            {
+                option.AddPolicy(
+                    "CorsPolicy",
+                    builder => builder.WithOrigins("http://localhost:4200")
+                        .AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .AllowCredentials());
+            });
+
+
             //Если мы поменяли модель и хотим обновить базу
             //dotnet ef migrations remove --context ElectricityСountContext
             //dotnet ef migrations add InitialCreate --context ElectricityСountContext
             //dotnet ef database update --context ElectricityСountContext
-            
+
             services.AddDbContext<ElectricityСountContext>(optionsBuilder =>
                 optionsBuilder.UseSqlite("Data Source=DemoProject.db;Cache=Shared"));
             services.AddControllers();
@@ -45,11 +57,12 @@ namespace WebApplicationGuide
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.UseHttpsRedirection();
+            
+            //app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseCors("CorsPolicy");
+            
             app.UseAuthorization();
 
 
