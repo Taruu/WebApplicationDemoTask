@@ -7,12 +7,16 @@
   <component name="ChangeListManager">
     <list default="true" id="828de9a3-cae6-4821-b36f-357f4f2c333e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplicationGuide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplicationGuide/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityMeterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityMeterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityValueController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityValueController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db-wal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/WebApplicationGuide.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/WebApplicationGuide.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +46,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e899759452a9c1d74615d7513a4e1dd04cf7f3f31c44a7fe4fce170b5b3f98f/Future.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6d3563dd7afd65df45dcc464eb948a7721160bacf6079a666503a62bc6f20/ModelBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1137a8ed8863d86dbb99bfc82a58d8b2a75bb1e3198d3943595eb5e864e7f78/AsyncValueTaskMethodBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationGuide/Controllers/TodoItemsController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebApplicationGuide/Controllers/WeatherForecastController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/174722726b4c5eee18a95a145c2decedf934448f218f5df313dc68ee5e31260/ActionResultOfT.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1d37075595f84289accb0929ef60d6f62ba00/0/IActionResult.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -114,7 +120,7 @@
       <workItem from="1649001088483" duration="4686000" />
       <workItem from="1649061585398" duration="14740000" />
       <workItem from="1649165694548" duration="3421000" />
-      <workItem from="1649226807269" duration="9155000" />
+      <workItem from="1649226807269" duration="13352000" />
     </task>
     <task id="LOCAL-00001" summary="inuit">
       <created>1648976372417</created>
@@ -165,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649080306376</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix date">
+      <created>1649282028095</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649282028095</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +204,7 @@
     <MESSAGE value="add step result" />
     <MESSAGE value="groupedTimes work" />
     <MESSAGE value="done result and reworked OnModelCreating" />
-    <option name="LAST_COMMIT_MESSAGE" value="done result and reworked OnModelCreating" />
+    <MESSAGE value="fix date" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix date" />
   </component>
 </project>

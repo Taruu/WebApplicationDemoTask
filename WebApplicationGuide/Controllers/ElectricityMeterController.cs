@@ -32,26 +32,19 @@ namespace WebApplicationGuide.Controllers
             return await _context.ElectricityCount.ToListAsync();
         }
 
-        // GET: api/TodoItems/5
+        // GET values
         [HttpGet("{id}")]
         public async Task<ActionResult<Object>> GetElectricityMeters(long id)
         {
             DateTime setDate;
-
             Boolean dateInQuery = DateTime.TryParse(HttpContext.Request.Query["date"], out setDate);
-
-
             setDate = setDate.ToUniversalTime(); // Вот за что я люблю unixtime там такой шизы нет. цифирки значит цифирки
-            var electricityCount = await _context.ElectricityCount.FindAsync(id);
-
-
             DateTime startTime = setDate.Date;
             DateTime endTime = setDate.Date.AddDays(1);
 
-            var valuesCounter =
-                _context.ElectricityValues.Where(v =>
-                    (v.ElectricityCountForeignKey == electricityCount.ElectricityCountId) &&
-                    (v.CreateAt >= startTime && v.CreateAt < endTime));
+            
+            
+            var electricityCount = await _context.ElectricityCount.FindAsync(id);
 
             ElectricityValue newestValue = _context.ElectricityValues.Where(v =>
                     (v.ElectricityCountForeignKey == electricityCount.ElectricityCountId))
@@ -62,10 +55,16 @@ namespace WebApplicationGuide.Controllers
                     (v.ElectricityCountForeignKey == electricityCount.ElectricityCountId))
                 .OrderBy(value => value.CreateAt)
                 .FirstOrDefault();
-
+            
             var RangeDates = new Object();
+            
+            
+            var valuesCounter =
+                _context.ElectricityValues.Where(v =>
+                    (v.ElectricityCountForeignKey == electricityCount.ElectricityCountId) &&
+                    (v.CreateAt >= startTime && v.CreateAt < endTime));
 
-
+            
             if ((newestValue is ElectricityValue) && (oldestValue is ElectricityValue))
             {
                 RangeDates = new

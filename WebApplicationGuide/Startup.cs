@@ -17,8 +17,6 @@ namespace WebApplicationGuide
 {
     public class Startup
     {
-        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
-
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -38,10 +36,8 @@ namespace WebApplicationGuide
                         .AllowAnyHeader()
                         .AllowCredentials());
             });
-
-
             //Если мы поменяли модель и хотим обновить базу
-            //dotnet ef migrations remove --context ElectricityСountContext
+            //dotnet ef migrations remove --context ElectricityСountContext //в том случае если что то осталось
             //dotnet ef migrations add InitialCreate --context ElectricityСountContext
             //dotnet ef database update --context ElectricityСountContext
 
@@ -57,8 +53,6 @@ namespace WebApplicationGuide
             {
                 app.UseDeveloperExceptionPage();
             }
-            
-            //app.UseHttpsRedirection();
 
             app.UseRouting();
             app.UseCors("CorsPolicy");
