@@ -5,18 +5,9 @@
     <projectFile profileName="WebApplicationGuide">WebApplicationGuide/WebApplicationGuide.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="828de9a3-cae6-4821-b36f-357f4f2c333e" name="Changes" comment="">
+    <list default="true" id="828de9a3-cae6-4821-b36f-357f4f2c333e" name="Changes" comment="database full">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WebApplicationGuide/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WebApplicationGuide/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityValueController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Controllers/ElectricityValueController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db-shm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/DemoProject.db-wal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/WebApplicationGuide.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/WebApplicationGuide.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.dll" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/Debug/netcoreapp3.0/WebApplicationGuide.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApplicationGuide/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApplicationGuide/Properties/launchSettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +111,7 @@
       <workItem from="1649001088483" duration="4686000" />
       <workItem from="1649061585398" duration="14740000" />
       <workItem from="1649165694548" duration="3421000" />
-      <workItem from="1649226807269" duration="13352000" />
+      <workItem from="1649226807269" duration="15968000" />
     </task>
     <task id="LOCAL-00001" summary="inuit">
       <created>1648976372417</created>
@@ -178,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649282028095</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="database full">
+      <created>1649319788799</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649319788799</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +203,7 @@
     <MESSAGE value="groupedTimes work" />
     <MESSAGE value="done result and reworked OnModelCreating" />
     <MESSAGE value="fix date" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix date" />
+    <MESSAGE value="database full" />
+    <option name="LAST_COMMIT_MESSAGE" value="database full" />
   </component>
 </project>
